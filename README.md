@@ -1,70 +1,19 @@
-# Getting Started with Create React App
+# Этот проект можно открыть по ссылке: https://thunderous-gingersnap-36fa89.netlify.app
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## также его можно скачать и запустить с помощью команды npm start
 
-## Available Scripts
+# Описание бизнес логики
+1. Просмотр списка пользователей - таблица со всеми пользователями из MockAPI
+2. Поиск пользователей - фильтрация по всем полям (имя, учетная запись, email, группа, телефон)
+3. Сортировка - трехступенчатая сортировка (по возрастанию, по убыванию, без сортировки)
+4. Массовое удаление - выбор нескольких пользователей через чекбоксы и удаление
+5. Создание пользователей - диалоговое окно с формой для добавления нового пользователя
+6. Группировка по группам - просмотр пользователей, сгруппированных по полю "group"
+7. Статистика - отображение общего количества пользователей и групп
 
-In the project directory, you can run:
+# Выводы автора по проектированию UI вручную и при помощи LLM
+## Проектирование UI вручную (страница пользователей)
+Проектируя самостоятельно, нужно держать в голове постоянно макет того, как должна выглядеть страница. Также нужно понимать где лучше какой тег использовать, чтобы все выглядело логично. Еще проектируя таким способом человек легко ориентируется в коде, ведь он писал его сам. Нейронные сети могут писать много ненужных функций и нагромождать код, поэтому самостоятельное написание очень облегчает задачу разобраться что написано.
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Проектирование UI с помощью LLM (страница групп пользователей)
+Для проектирования страницы я использовала LLM: DeepSeek. С одной стороны это облегчило работу, ведь ИИ сам написал код, а тебе остается просто проверить насколько хорошо он справился с задачей. С другой стороны это тяжело, потому что порой тяжело объяснить, что ты хочешь видеть и каким образом. Вечно направляя новые запросы по правкам сайта, можно так и не прийти к изначальным требованиям и потратить при этом много времени. Поэтому LLM это просто хороший инструмент, который может помочь в разработке, главное не полагаться на него полностью
