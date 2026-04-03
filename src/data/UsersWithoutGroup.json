@@ -1,0 +1,26 @@
+[
+  {
+    "id": "1",
+    "fullName": "Anna Smirnova",
+    "site": "https://example.com/anna",
+    "email": "anna.smirnova@example.com",
+    "group": null,
+    "telephone": "+7 999 123-45-67"
+  },
+  {
+    "id": "2",
+    "fullName": "Ivan Ivanov",
+    "site": "https://example.com/ivan",
+    "email": "ivan.i@example.com",
+    "group": null,
+    "telephone": "+7 999 234-56-78"
+  },
+  {
+    "id": "3",
+    "fullName": "Bella Smith",
+    "site": "https://example.com/bella",
+    "email": "bella@example.com",
+    "group": null,
+    "telephone": "+7 999 345-67-89"
+  }
+]
